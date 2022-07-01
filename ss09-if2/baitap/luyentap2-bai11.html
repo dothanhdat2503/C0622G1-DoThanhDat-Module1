@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = prompt("Nhập số lương của bạn");
+    let tax;
+    if (salary >= 3000) {
+        tax = salary * 20 / 100;
+        document.write("Thuế thu nhập của bạn là: " + tax + "%");
+    } else if (salary >= 2000) {
+        tax = salary * 10 / 100;
+        document.write("Thuế thu nhập của bạn là: " + tax + "%");
+    } else if (salary >= 500) {
+        tax= salary * 5 / 100;
+        document.write("Thuế thu nhập của bạn là: " + tax + "%");
+    } else {
+        document.write("Bạn không phải đóng thuế nào:");
+    }
+</script>
+</body>
+</html>

@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let numberA=parseInt(prompt("Nhập số đầu"));
+    let numberB=parseInt(prompt("Nhập số thứ hai"));
+    if (numberA === 0 && numberB === 0){
+        alert("Phương tình vô số nghiệm");
+    }
+    if (numberA === 0 && numberB !== 0 ){
+        alert("Phương trình vô nghiệm");
+    }
+    if (numberA !== 0){
+        alert("Phương trình có nghiệm x =" + -numberB / numberA);
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1: Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này.
+    let vatly = parseInt(prompt("Nhập điểm vật lý"));
+    let hoaHoc = parseInt(prompt("Nhập điểm hóa học"));
+    let sinhHoc = parseInt(prompt("Nhập điểm sinh học"));
+    let diemtrungbinh = (vatly + hoaHoc + sinhHoc) / 3
+    let tong = vatly + sinhHoc + hoaHoc
+    document.write("Điểm vật lý là : " + vatly + " Điểm hóa học là: " + hoaHoc + " Điểm sinh học là: " + sinhHoc + "<br>");
+    document.write("Tổng điểm ba môn là: " + tong + "<br>");
+    document.write("Điểm trung bình là: " + diemtrungbinh + "<br>");
+
+    // Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9]
+
+    let celsius = parseInt(prompt("Nhập độ C"));
+    var doC = parseInt(prompt(' Nhiệt độ cần đổi sang độ F: '));
+    var doF = (9 * doC + 160) / 5;
+    document.write(doC + ' Độ C = ' + doF + ' Độ F');
+
+    // Bài 3: Diện tích hình tròn
+
+    var banKinh = parseInt(prompt("Nhập bán kính hình tròn:"));
+    alert("diện tích hình tròn là: " + (banKinh * banKinh * 3.14));
+
+    // Bài 4: chi vi hình tròn
+
+    var banKinh2 = parseInt(prompt("Nhập đường kính hình tròn:"))
+    alert("Chu vi hình tròn là:" + (banKinh2 * 2 * 3.14));
+
+
+</script>
+</body>
+</html>

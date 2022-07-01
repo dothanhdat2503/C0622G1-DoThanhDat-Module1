@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienDien = parseFloat(prompt("Số điện tháng này là"));
+    let donGIa;
+    let donGIa2;
+    let thanhTien
+    if (tienDien > 100){
+        donGIa = parseFloat(2500);
+        thanhTien = tienDien * donGIa;
+        alert("Tiền điện tháng này là: " + thanhTien);
+    } else {
+        donGIa2 = parseFloat(3000);
+        thanhTien = tienDien * donGIa2;
+        alert("Tiền điện tháng này là : " + thanhTien);
+    }
+</script>
+</body>
+</html>

@@ -6,11 +6,13 @@
 </head>
 <body>
 <script>
-    let doC=parseInt(prompt("Nhập độ C"));
+    let doC = parseInt(prompt("Nhập độ C"));
     let doF
-    if (doC > -10){
-        doF = doC * 9/5 + 32
-        alert("Độ F là: " + doF )
+    if (doC !== 0) {
+        doF = doC * 9 / 5 + 32
+        alert("Độ F là: " + doF)
+    }else {
+        alert("quá kinh khủng")
     }
 </script>
 </body>
