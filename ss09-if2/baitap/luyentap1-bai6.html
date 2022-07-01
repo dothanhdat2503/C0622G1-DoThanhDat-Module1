@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = prompt("Nhập số lương của bạn");
+    let pink;
+    if (salary >= 3000) {
+        pink = salary * 20 / 100;
+        document.write("Hoa Hồng bạn nhận được là: " + pink + "%");
+    } else if (salary >= 2000) {
+        pink = salary * 10 / 100;
+        document.write("Hoa hồng bạn nhận được là: " + pink + "%");
+    } else if (salary >= 500) {
+        pink = salary * 5 / 100;
+        document.write("Hoa hồng bạn nhận được là: " + pink + "%");
+    } else {
+        document.write("Bạn không nhận được hoa hồng");
+    }
+</script>
+</body>
+</html>

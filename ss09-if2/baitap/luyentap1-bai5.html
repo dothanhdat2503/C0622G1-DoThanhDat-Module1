@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA=parseInt(prompt("Nhập điểm bài kiểm tra"));
+    let numberB=parseInt(prompt("Nhập điểm thi giữa kỳ"));
+    let numberC=parseInt(prompt("Nhập điểm thi cuối kỳ"));
+    let total = (numberA*numberB*numberC)/3;
+    if (total>=8.5){
+        document.write("Học sinh giỏi");
+    }else if (total>=7.5){
+        document.write("Học sinh khá");
+    }else if (total>=5) {
+        document.write("Học sinh Trung bình");
+    }else {
+        document.write("Học sinh yếu");
+    }
+</script>
+</body>
+</html>
