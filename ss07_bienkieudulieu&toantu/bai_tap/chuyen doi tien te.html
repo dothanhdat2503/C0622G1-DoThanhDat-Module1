@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td> <input id="Tien" type="number"> </td>
+        <td>
+            <select id="1">
+                <option value="VietNam">VietNam</option>
+                <option value="USA">USA</option>
+            </select>
+        </td>
+        <td>
+            <select id="2">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="thanhTien()">Convert</button>
+        </td>
+    </tr>
+    <span id="show"></span>
+    <script>
+
+        function thanhTien() {
+            let soTien= document.getElementById("Tiền").value;
+            let kq = soTien
+            let tien1= document.getElementById("1").value;
+            let tien2= document.getElementById("2").value;
+            if (tien1 !== tien2){
+                if (tien1 === "VND"){
+                    kq= (soTien / 23000);
+                }
+                if (tien2 === "USD"){
+                    kq=(soTien*23000);
+                }
+                document.getElementById("show").innerHTML = soTien+''+tien1+'='+kq+''+tien2;
+            }
+        }
+    </script>
+
+</table>
+</body>
+</html>
